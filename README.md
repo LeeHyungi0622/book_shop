@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+## 📂&nbsp; 프로젝트 이름 (Project Name)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Book Flex
 
-## Available Scripts
+Application Logo
 
-In the project directory, you can run:
+본 어플리케이션의 데이터는 Interpark book Open API를 기반으로 개발하였습니다.<br/>
+(An application used to filter data form Interpark book open API, built with React, JavaScript, and CSS.)<br/>
+<br/>
+Interpark book Open API : [http://book.interpark.com/bookPark/html/bookpinion/api_main.html]
+<br/>
+<br/>
 
-### `yarn start`
+<hr/>
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 👨‍💻&nbsp;사용된 기술스택 (Used Tech Stack)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### HTML5, CSS, JavaScript
 
-### `yarn test`
+#### UI Framework and Libraries: ReactJS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br/>
+<hr/>
+<br/>
 
-### `yarn build`
+## 🖼️&nbsp; 프로젝트 와이어프레임 (Project Wireframe)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<table>
+    <tr>
+        <td>
+            <img src = "imgs/main_page.png" alt="Markdown Monster icon" style="height: 300px; width:400px; float: left; margin-right: 10px;"/>
+        </td>
+        <td>
+            <img src = "imgs/detail_page.png" alt="Markdown Monster icon" style="height: 300px; width:400px; float: left; margin-right: 10px;"/>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:center">Main page</td>
+        <td style="text-align:center">Detail page</td>
+    </tr>
+</table>
+<br/>
+<hr/>
+<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧑🏼‍💻&nbsp;프로젝트의 요구사항 및 특징 (Project Requirements and Features)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 판매되고 있는 책의 정보를 사용자에게 제공한다.
+- IT 관련 서적은 별도의 메뉴에서 관리를 한다.
+- 베스트셀러, 추천도서, 새로 출간된 도서를 카테고리별로 분류해서 화면에 출력한다.
+<br/>
+<br/>
+<hr/>
+<br/>
 
-### `yarn eject`
+## Project Status
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### 🗓️ &nbsp; 2020.11.18
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+프로젝트는 현재 개발중인 상태이며, 사용자들은 판매중인 책의 정보를 얻을 수 있다. 네비게이션 메뉴는 세 개의 메뉴로 구성이 되어있으며, 일반 도서, IT관련 도서 그리고 검색 메뉴로 구성이 되어있다. <br/>
+(This project is currently in development. Users can get the information of the book on sale. Navigation menu is consist of three menu. One is general books information and the other is classified as an IT-related books, and another is search menu.)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 프로젝트 스크린샷 (Project Screen Shot(s))
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Example:
 
-## Learn More
+[ PRETEND SCREEN SHOT IS HERE ]
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[ PRETEND OTHER SCREEN SHOT IS HERE ]
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 프로젝트 설치 및 설정 지침 (Installation and Setup Instructions)
 
-### Code Splitting
+① Clone down this repository. You will need `node` and `npm` installed globally on your machine.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+② Installation:
 
-### Analyzing the Bundle Size
+`npm install`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+③ To Start Server:
 
-### Making a Progressive Web App
+`npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To Visit App:
 
-### Advanced Configuration
+Book Flex : [https://localhost:3000/]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🤔&nbsp;프로젝트를 마치며 (Project Reflection)
 
-### Deployment
+❓Q1.&nbsp;이 프로젝트의 배경은 무엇인가? <br/>
+→ 사이드 프로젝트(Side project)로 JavaScript와 Component기반의 React를 사용한 개발에 좀 더 익숙해지기 위해 개인적으로 진행한 프로젝트 입니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+❓Q2.&nbsp;무엇을 만들기 위한 목적으로 개발되었나? <br/>
+→ 책을 구매하는 사용자를 위해 베스트셀러, 추천도서, 신간도서로 카테고리를 분류하여, 일반책과 IT관련 서적에 대한 정보를 제공하기 위해 개발을 하였다.
 
-### `yarn build` fails to minify
+❓Q3.&nbsp;이 프로젝트를 통해서 얻고자 하는 것과 개발경험에 있어, 어떤 부분이 도움이 되었는가?
+→ 우선 Component기반의 라이브러리를 사용해서 개발하는 좋은 경험이 되었던 것 같습니다. 화면의 구성을 Component단위로 쪼개서 화면을 구성하고, 각 Component가 재사용성이 가능해지면서 좀 더 효율적인 개발이 가능했던 것 같습니다. 또한 ES6 이후에 업데이트된 JavaScript의 사용에 좀 더 익숙해질 수 있었던 좋은 기회였던 것 같습니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+❓Q4.&nbsp;프로젝트 진행중에 예상치 못했던 어려움이 있었나? <br/>
+→
+
+❓Q5.&nbsp;이 프로젝트를 구현함에 있어 사용했던 도구/라이브러리는 무엇입니까? <br/>
+→ 이 프로젝트를 구현함에 있어 사용했던 것은 React framework입니다. Vanilla JS대신에 React JS를 사용한 이유는 웹앱이 점점 더 복잡해지고 역동적이게 변하고 있기 때문에 프로세스의 속도를 높이기 위해서 React와 같은 새로운 라이브러리를 사용해서 개발하는 것에 익숙해져야 한다고 생각했기 때문입니다.
