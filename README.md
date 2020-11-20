@@ -20,6 +20,27 @@ Interpark book Open API : [http://book.interpark.com/bookPark/html/bookpinion/ap
 
 #### UI Framework and Libraries: ReactJS
 
+#### Design pattern : Container and Presenter Pattern
+
+<table>
+    <tr>
+        <td>
+            <img src = "imgs/container_presenter_pattern.png" alt="Markdown Monster icon" style="height: 250px; width:300px; float: left; margin-right: 10px;"/>
+        </td>
+        <td>
+            <h2><b>A container</b></h2>
+            <p>- child-components에 데이터를 제공해주는 역할을 한다.</p>
+            <p>- DOM Markup에 대한 작성은 없다.</p>
+            <p></p>
+            <p></p>
+            <h2><b>A presenter</b></h2>
+            <p>- 주로 보여지는 것과 관련된 처리를 한다.</p>
+            <p>- 항상 DOM markup과 styles에 대한 작성을 한다.</p>
+            <p>- 어떻게 data가 load, transformed, or mutated는지에 대한 처리는 하지 않는다.(Container 영역)</p>
+        </td>
+    </tr>
+</table>
+
 <br/>
 <hr/>
 <br/>

@@ -1,14 +1,14 @@
 import React, {Component} from "react";
-import './App.css';
-import styled from "styled-components";
-
-
+import Router from "./Router";
+import GlobalStyle from "./GlobalStyles";
 
 class App extends Component {
   render(){
     return (
-      <div>
-      </div>
+      <>
+        <Router />
+        <GlobalStyle />
+      </>
     );
   }
 }
