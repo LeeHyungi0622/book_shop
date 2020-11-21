@@ -93,10 +93,10 @@ const DetailPresenter = ({ result, loading, error }) =>
         <>
             <Container>
                 <BackDrop 
-                    bgImage={ result.item[0].coverLargeUrl ? result.item[0].coverLargeUrl : result.item[0].coverSmallUrl}
+                    bgImage={ result.item[0] ? result.item[0].coverLargeUrl : ""}
                 />
                 <Content>
-                    <Cover bgImage={ result && result.item[0].coverLargeUrl}/>
+                    <Cover bgImage={ result.item[0] ? result.item[0].coverLargeUrl : ""}/>
                     <Data> 
                         <Title>{ result && result.item[0].title }</Title>
                         <Status>{ result && result.item[0].saleStatus }</Status>

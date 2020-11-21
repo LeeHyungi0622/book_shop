@@ -16,6 +16,7 @@ export default class extends Component {
     async componentDidMount() {
         const { match: { params: { isbn } }, history: { push } } = this.props;
         const parsedISBN = parseInt(isbn);
+        console.log("ISBN : ", isbn);
         let result = null;
         try{
             ({data: result} = await bookApi.bookDetail(parsedISBN));

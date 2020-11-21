@@ -23,6 +23,7 @@ const BookPresenter = ({bestSeller, recommend, newBook, categoryId, error, loadi
                             year={book.pubDate.substring(0,4)}
                             author={book.author}
                             categoryId={categoryId}
+                            isbn={book.isbn}
                         />
                     ))}
                 </Section>
@@ -38,6 +39,7 @@ const BookPresenter = ({bestSeller, recommend, newBook, categoryId, error, loadi
                             year={book.pubDate.substring(0,4)}
                             author={book.author}
                             categoryId={categoryId}
+                            isbn={book.isbn}
                         />
                     ))}
                 </Section>
@@ -54,6 +56,7 @@ const BookPresenter = ({bestSeller, recommend, newBook, categoryId, error, loadi
                             year={book.pubDate.substring(0,4)}
                             author={book.author}
                             categoryId={categoryId}
+                            isbn={book.isbn}
                         />
                     ))}
                 </Section>
