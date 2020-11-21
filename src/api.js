@@ -28,12 +28,19 @@ export const bookApi = {
             categoryId: categoryId
         }
     }),
-    bookDetail: (id) =>
-        api.get(`book/${id}`),
+
+    // http://book.interpark.com/api/search.api?key=interpark&query=9788992717199&queryType=isbn
+    bookDetail: (isbn) =>
+        api.get("search.api", {
+            params: {
+                query: parseInt(isbn),
+                queryType: "isbn"
+            }
+        }),
     search: (term) =>
         api.get("search.api", {
             params: {
-                query: encodeURIComponent(term)
+                query: term
             }
         })
 

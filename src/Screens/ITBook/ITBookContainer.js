@@ -8,7 +8,7 @@ export default class extends Component {
         bestSeller: null,
         recommend: null,
         newBook: null,
-        category: 100,
+        category: 122,
         error: null,
         loading: true
     };
@@ -39,11 +39,12 @@ export default class extends Component {
         console.log("best seller : ", bestSeller);
         console.log("recommend : ", recommend);
         console.log("new book : ", newBook);
+        console.log("category_id : ", category);
         return ( <
             ITBookPresenter bestSeller = { bestSeller }
             recommend = { recommend }
             newBook = { newBook }
-            category = { category }
+            categoryId = { category }
             error = { error }
             loading = { loading }
             />

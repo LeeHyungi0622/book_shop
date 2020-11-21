@@ -14,7 +14,8 @@ export default () => (
                 <Route path="/" exact component={Home} />
                 <Route path="/it" exact component={ITBook} />
                 <Route path="/novel" exact component={NovelBook} />
-                <Route path="/:category/:id" component={Detail} />
+                <Route path="/general/:id" exact component={Detail} />
+                <Route path="/book/:isbn" component={Detail} />
                 <Route path="/search" exact component={Search} />
                 <Redirect from="*" to="/" />
             </Switch>

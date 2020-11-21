@@ -8,7 +8,7 @@ export default class extends Component {
         bestSeller: null,
         recommend: null,
         newBook: null,
-        category: 100,
+        categoryId: 100,
         error: null,
         loading: true
     };
@@ -35,25 +35,13 @@ export default class extends Component {
     }
 
     render() {
-        const { bestSeller, recommend, newBook, category, error, loading } = this.state;
-        // const settings = {
-        //     dots: true,
-        //     infinite: true,
-        //     sliderToShow: 3,
-        //     slidersToScroll: 1,
-        //     autoplay: true,
-        //     speed: 2000,
-        //     autoplaySpeed: 2000,
-        //     cssEase: "linear"
-        // };
-
+        const { bestSeller, recommend, newBook, categoryId, error, loading } = this.state;
         return ( < HomePresenter bestSeller = { bestSeller }
             recommend = { recommend }
             newBook = { newBook }
-            category = { category }
+            categoryId = { categoryId }
             error = { error }
             loading = { loading }
-            // settings = { settings }
             />
         );
     }

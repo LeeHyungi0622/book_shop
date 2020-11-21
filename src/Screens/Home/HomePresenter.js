@@ -11,7 +11,7 @@ const Container = styled.div `
     padding: 20px 20px;
 `;
 
-const HomePresenter = ({bestSeller, recommend, newBook, category, error, loading, settings}) =>
+const HomePresenter = ({bestSeller, recommend, newBook, categoryId, error, loading, settings}) =>
     loading ? (<Loader />) : (
         <Container>
             <Slider bestSeller={bestSeller}/>
@@ -25,6 +25,8 @@ const HomePresenter = ({bestSeller, recommend, newBook, category, error, loading
                             rating={book.customerReviewRank}
                             year={book.pubDate.substring(0,4)}
                             author={book.author}
+                            categoryId={categoryId}
+                            isbn={book.isbn}
                         />
                     ))}
                 </Section>
@@ -40,6 +42,8 @@ const HomePresenter = ({bestSeller, recommend, newBook, category, error, loading
                             rating={book.customerReviewRank}
                             year={book.pubDate.substring(0,4)}
                             author={book.author}
+                            categoryId={categoryId}
+                            isbn={book.isbn}
                         />
                     ))}
                 </Section>

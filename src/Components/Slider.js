@@ -38,6 +38,7 @@ export default class AutoPlay extends Component {
                 rating={book.customerReviewRank}
                 year={book.pubDate.substring(0,4)}
                 author={book.author}
+                isbn={book.isbn}
             />
             ))}
         </ImageSlider>

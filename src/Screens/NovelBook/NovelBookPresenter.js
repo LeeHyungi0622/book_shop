@@ -9,7 +9,7 @@ const Container = styled.div `
     padding: 20px 20px;
 `;
 
-const BookPresenter = ({bestSeller, recommend, newBook, category, error, loading}) =>
+const BookPresenter = ({bestSeller, recommend, newBook, categoryId, error, loading}) =>
     loading ? (<Loader />) : (
         <Container>
             {bestSeller && bestSeller.length > 0 && (
@@ -22,6 +22,7 @@ const BookPresenter = ({bestSeller, recommend, newBook, category, error, loading
                             rating={book.customerReviewRank}
                             year={book.pubDate.substring(0,4)}
                             author={book.author}
+                            categoryId={categoryId}
                         />
                     ))}
                 </Section>
@@ -36,6 +37,7 @@ const BookPresenter = ({bestSeller, recommend, newBook, category, error, loading
                             rating={book.customerReviewRank}
                             year={book.pubDate.substring(0,4)}
                             author={book.author}
+                            categoryId={categoryId}
                         />
                     ))}
                 </Section>
@@ -51,6 +53,7 @@ const BookPresenter = ({bestSeller, recommend, newBook, category, error, loading
                             rating={book.customerReviewRank}
                             year={book.pubDate.substring(0,4)}
                             author={book.author}
+                            categoryId={categoryId}
                         />
                     ))}
                 </Section>

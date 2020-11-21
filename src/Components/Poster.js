@@ -55,28 +55,31 @@ const Year = styled.span`
     color: rgb(255,255,255,0.5);    
 `;
 
-const Poster = ({itemId, imageUrl, title, rating, year, author, categoryId}) => (
-    <Link to={`/${categoryId}/${itemId}`}>
-        <Container>
-            <ImageContainer>
-                <Image bgUrl={imageUrl? imageUrl : ""}/>
-                <Rating>
-                    <span role="img" aria-label="rating">
-                      🌟
-                    </span>{" "}
-                    {rating}/10
-                </Rating>
-            </ImageContainer>
-            <Title>
-                {title.length > 18 ? `${title.substring(0, 15)}...`: title}
-            </Title>
-            <Author>
-                {author}
-            </Author>
-            <Year>{year}</Year>
-        </Container>
-    </Link>
-)
+const Poster = ({ itemId, imageUrl, title, rating, year, author, categoryId, isbn }) => {
+    console.log("category_id : ", categoryId);
+    return (
+        <Link to={`/book/${isbn}`}>
+            <Container>
+                <ImageContainer>
+                    <Image bgUrl={imageUrl? imageUrl : ""}/>
+                    <Rating>
+                        <span role="img" aria-label="rating">
+                          🌟
+                        </span>{" "}
+                        {rating}/10
+                    </Rating>
+                </ImageContainer>
+                <Title>
+                    {title.length > 18 ? `${title.substring(0, 15)}...`: title}
+                </Title>
+                <Author>
+                    {author}
+                </Author>
+                <Year>{year}</Year>
+            </Container>
+        </Link>
+    )
+}
 
 Poster.propTypes = {
     itemId: PropTypes.number.isRequired,
