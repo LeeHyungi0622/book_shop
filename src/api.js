@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://book.interpark.com/api/",
+    baseURL: "https://book.interpark.com/api/",
     headers: {
         'Access-Control-Allow-Origin': 'http://localhost:3001',
     },
