@@ -36,10 +36,6 @@ export default class extends Component {
 
     render() {
         const { bestSeller, recommend, newBook, category, error, loading } = this.state;
-        console.log("best seller : ", bestSeller);
-        console.log("recommend : ", recommend);
-        console.log("new book : ", newBook);
-        console.log("category_id : ", category);
         return ( < NovelBookPresenter 
             bestSeller = { bestSeller }
             recommend = { recommend }
