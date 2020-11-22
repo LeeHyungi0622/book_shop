@@ -56,7 +56,6 @@ const Year = styled.span`
 `;
 
 const Poster = ({ itemId, imageUrl, title, rating, year, author, categoryId, isbn }) => {
-    console.log("category_id : ", categoryId);
     return (
         <Link to={`/book/${isbn}`}>
             <Container>
@@ -88,7 +87,7 @@ Poster.propTypes = {
     rating: PropTypes.number,
     year: PropTypes.string,
     author: PropTypes.string,
-    categoryId: PropTypes.string
+    categoryId: PropTypes.number
 }
 
 export default Poster;

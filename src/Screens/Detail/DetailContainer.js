@@ -16,25 +16,23 @@ export default class extends Component {
     async componentDidMount() {
         const { match: { params: { isbn } }, history: { push } } = this.props;
         const parsedISBN = parseInt(isbn);
-        console.log("ISBN : ", isbn);
         let result = null;
-        try{
-            ({data: result} = await bookApi.bookDetail(parsedISBN));
-        }catch{
-            this.setState({error: "Can't find anything."});
-        }finally{
-            this.setState({loading: false, result})
+        try {
+            ({ data: result } = await bookApi.bookDetail(parsedISBN));
+        } catch {
+            this.setState({ error: "Can't find anything." });
+        } finally {
+            this.setState({ loading: false, result })
         }
     }
 
     render() {
         const { result, error, loading } = this.state;
-        console.log("result : ", result);
-        return <DetailPresenter 
-                    result = { result }
-                    error = { error }
-                    loading = { loading }
-               />
+        return <DetailPresenter
+        result = { result }
+        error = { error }
+        loading = { loading }
+        />
     }
 
 }

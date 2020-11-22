@@ -25,13 +25,13 @@ export default class AutoPlay extends Component {
       cssEase: "linear"
     };
     const bestSeller = this.props.bestSeller;
-    console.log("bestSeller", bestSeller)
     return (
       <>
         <h2>이달의 베스트샐러</h2>
         <ImageSlider {...settings}>
             { bestSeller.map(book => (
                 <Poster 
+                key={book.itemId}
                 itemId={book.itemId}
                 imageUrl={book.coverSmallUrl}
                 title={book.title}

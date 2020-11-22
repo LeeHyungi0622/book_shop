@@ -44,6 +44,7 @@ const SearchPresenter = ({
                 <Section title="Book Search Results">
                     {results.map(book => (
                         <Poster 
+                        key={book.itemId}
                         itemId={book.itemId}
                         imageUrl={book.coverSmallUrl}
                         title={book.title}

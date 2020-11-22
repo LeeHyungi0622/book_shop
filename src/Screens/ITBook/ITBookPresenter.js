@@ -16,6 +16,7 @@ const BookPresenter = ({bestSeller, recommend, newBook, categoryId, error, loadi
                 <Section title="베스트샐러">
                     {bestSeller.map((book) => (
                         <Poster 
+                            key={book.itemId}
                             itemId={book.itemId}
                             imageUrl={book.coverSmallUrl}
                             title={book.title}
@@ -32,6 +33,7 @@ const BookPresenter = ({bestSeller, recommend, newBook, categoryId, error, loadi
                 <Section title="추천도서">
                     {recommend.map(book => (
                         <Poster 
+                            key={book.itemId}
                             itemId={book.itemId}
                             imageUrl={book.coverSmallUrl}
                             title={book.title}
@@ -49,6 +51,7 @@ const BookPresenter = ({bestSeller, recommend, newBook, categoryId, error, loadi
                 <Section title="신간도서">
                     {newBook.map(book => (
                         <Poster 
+                            key={book.itemId}
                             itemId={book.itemId}
                             imageUrl={book.coverSmallUrl}
                             title={book.title}

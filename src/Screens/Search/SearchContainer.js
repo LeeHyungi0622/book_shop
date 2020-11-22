@@ -28,7 +28,6 @@ export default class extends Component {
 
     searchByTerm = async() => {
         const { searchTerm } = this.state;
-        console.log("Search Term : ", encodeURI(searchTerm));
         this.setState({ loading: true });
         try {
             const { data: { item } } = await bookApi.search(searchTerm);
