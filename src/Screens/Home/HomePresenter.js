@@ -9,6 +9,7 @@ import Slider from "../../Components/Slider";
 
 const Container = styled.div `
     padding: 20px 20px;
+    
 `;
 
 const HomePresenter = ({bestSeller, recommend, newBook, categoryId, error, loading, settings}) =>

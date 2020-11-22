@@ -6,10 +6,13 @@ import styled from "styled-components";
 import Poster from "./Poster";
 
 const ImageSlider = styled(Slider)`
-    width: 100vw;
-    height: 260px;
+    width: 95vw;
+    height: 35vh;
     background-color: rgba(30,144,255, 0.3);
-    margin-bottom: 10px;
+    margin: 10px;
+    padding: 0 55px;
+    display: flex;
+    align-items: center;
 `;
 
 export default class AutoPlay extends Component {
