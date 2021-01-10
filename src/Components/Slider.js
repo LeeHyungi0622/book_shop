@@ -10,6 +10,7 @@ const HeadTitle = styled.h2`
   color: #6eb5ff;
   font-weight: 600;
   font-size: 20px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 `;
 
 const ImageSlider = styled(Slider)`

@@ -35,8 +35,18 @@ const SLink = styled(Link)`
     justify-content: center;
 `;
 
+const SLogo = styled(Link)`
+    font-size: 35px;
+    margin: 10px;
+`;
+
 export default withRouter(({location: {pathname}}) => (
     <Header>
+        <SLogo to="/">
+            <span role="img" aria-label="Loading">
+            📚
+            </span>
+        </SLogo>
         <List>
             <Item current={pathname === "/"}>
                 <SLink to="/">General Book</SLink>

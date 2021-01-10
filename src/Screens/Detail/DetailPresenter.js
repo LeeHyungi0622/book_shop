@@ -51,6 +51,7 @@ const Title = styled.h1 `
     font-size: 32px;
     margin-bottom: 10px;
     font-weight: 800;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 `;
 
 const Status = styled.h3 `
@@ -58,10 +59,12 @@ const Status = styled.h3 `
     color: red;
     font-weight: 800;
     margin-bottom: 10px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 `;
 
 const Detail = styled.div `
     margin: 10px 0;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 `;
 
 const Year = styled.span `
