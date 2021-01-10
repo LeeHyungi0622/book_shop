@@ -9,9 +9,9 @@ const Container = styled.div`
 `;
 
 const Title = styled.span`
-    font-size: 14px;
-    font-weight: 800;
-    color: blue;
+    color: #6eb5ff;
+    font-weight: 600;
+    font-size: 20px;
 `;
 
 const Grid = styled.div`
@@ -19,7 +19,7 @@ const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, 180px);
     grid-gap: 25px;
-    margin-left: 30px;
+    margin-left: 80px;
 `;
 
 const Section = ({title, children}) => (

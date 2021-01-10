@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { bookApi } from "../../api";
 import HomePresenter from "./HomePresenter";
 
-export default class extends Component {
+export default class Home extends Component {
 
     state = {
         bestSeller: null,

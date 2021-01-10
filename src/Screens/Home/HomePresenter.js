@@ -9,13 +9,17 @@ import Slider from "../../Components/Slider";
 
 const Container = styled.div `
     padding: 20px 20px;
-    
+`;
+
+const SubContainer = styled.div`
+    margin: 50px;
 `;
 
 const HomePresenter = ({bestSeller, recommend, newBook, categoryId, error, loading, settings}) =>
     loading ? (<Loader />) : (
         <Container>
             <Slider bestSeller={bestSeller}/>
+            <SubContainer>
             {recommend && recommend.length > 0 && (
                 <Section title="추천도서">
                     {recommend.map(book => (
@@ -52,6 +56,7 @@ const HomePresenter = ({bestSeller, recommend, newBook, categoryId, error, loadi
                 </Section>
             )
             }
+            </SubContainer>
         </Container>
     );
 

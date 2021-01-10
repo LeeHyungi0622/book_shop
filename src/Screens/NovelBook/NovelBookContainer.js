@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { bookApi } from "../../api";
 import NovelBookPresenter from "./NovelBookPresenter";
 
-export default class extends Component {
+export default class NovelBook extends Component {
 
     state = {
         bestSeller: null,

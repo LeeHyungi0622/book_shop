@@ -87,37 +87,27 @@ const Description = styled.p `
 
 
 const DetailPresenter = ({ result, loading, error }) =>
-    loading ? ( <
-        Loader / >
-    ) : ( <
-        >
-        <
-        Container >
-        <
-        BackDrop bgImage = { result.item[0] ? result.item[0].coverLargeUrl : "" }
-        /> <
-        Content >
-        <
-        Cover bgImage = { result.item[0] ? result.item[0].coverLargeUrl : "" }
-        /> <
-        Data >
-        <
-        Title > { result && result.item[0].title } < /Title> <
-        Status > { result && result.item[0].saleStatus } < /Status> <
-        Detail >
-        <
-        Year > { result && result.item[0].pubDate.substring(0, 4) } < /Year> <
-        Divider > ・ < /Divider> <
-        Publisher > 출판사: { result && result.item[0].publisher } < /Publisher> <
-        Divider > ・ < /Divider> <
-        Author > { result && result.item[0].author } < /Author> < /
-        Detail > <
-        Description > { result && result.item[0].description } <
-        /Description> < /
-        Data > <
-        /Content> < /
-        Container > <
-        />
+    loading ? ( <Loader / >
+    ) : ( 
+        <>
+        <Container>
+        <BackDrop bgImage = { result.item[0] ? result.item[0].coverLargeUrl : "" }/> 
+            <Content>
+            <Cover bgImage = { result.item[0] ? result.item[0].coverLargeUrl : "" }/> 
+            <Data>
+                <Title> { result && result.item[0].title } </Title> 
+                <Status> { result && result.item[0].saleStatus } </Status> 
+                <Detail>
+                <Year> { result && result.item[0].pubDate.substring(0, 4) } </Year> 
+                    <Divider> ・ </Divider> 
+                    <Publisher> 출판사: { result && result.item[0].publisher } </Publisher> 
+                    <Divider> ・ </Divider> 
+                    <Author> { result && result.item[0].author } </Author> 
+                </Detail> <Description> { result && result.item[0].description } </Description> 
+            </Data> 
+            </Content> 
+        </Container> 
+        </>
     )
 
 DetailPresenter.propTypes = {

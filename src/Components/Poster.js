@@ -36,23 +36,30 @@ const ImageContainer = styled.div`
             opacity: 1;
         }
     }
+    -webkit-box-shadow: 3px 11px 22px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 11px 22px 5px rgba(0,0,0,0.75);
+    box-shadow: 3px 11px 22px 5px rgba(0,0,0,0.75);
 `;
 
 const Title = styled.span`
     display: block;
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 3px;
+    color:#0d1c45;
+    font-weight: 600;
+    padding-top: 10px;
 `;
 
 const Author = styled.span`
     display: block;
     font-size: 11px;
     margin-bottom: 3px;
+    color: #0d1c45;
 `;
 
 const Year = styled.span`
     font-size: 10px;
-    color: rgb(255,255,255,0.5);    
+    color:#0d1c45;
 `;
 
 const Poster = ({ itemId, imageUrl, title, rating, year, author, categoryId, isbn }) => {
